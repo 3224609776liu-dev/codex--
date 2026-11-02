@@ -4,3 +4,11 @@ package/
 npm.tgz
 ffmpeg.exe
 ffmpeg.gz
+
+.openai/
+qa/
+/*.cjs
+/*.ps1
+/verify*.mjs
+/poster-jobs.json
+/projects.json
