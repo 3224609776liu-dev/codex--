@@ -1,0 +1,8 @@
+{
+  "name": "liuxu-portfolio-deployment",
+  "private": true,
+  "scripts": {
+    "build": "node liuxu-portfolio/scripts/install-and-build.mjs"
+  },
+  "engines": { "node": ">=22.12.0" }
+}

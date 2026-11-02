@@ -3,3 +3,7 @@
 !/.gitattributes
 !/liuxu-portfolio/
 !/README.md
+!/package.json
+!/package-lock.json
+!/wrangler.jsonc
+/dist/

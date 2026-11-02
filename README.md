@@ -31,3 +31,11 @@ npm run build
 - Git LFS 下载的是真实视频文件。若看到只有数行文字的 `.mp4` 文件，请执行 `git lfs pull`。
 
 项目使用 React、Vite、GSAP 和 React Bits 组件。所有作品与素材仅用于作者个人作品集展示，不另行授予转载或商用许可。
+
+## Cloudflare Pages 免费部署
+
+Cloudflare 构建根目录使用仓库根目录，构建命令 `npm run build`，输出目录 `dist`，Node.js 22.12 或更高版本。
+
+Pages 单文件限制为 25 MiB，因此原始视频独立保存于本仓库的 `portfolio-media-v1` GitHub Release。网页的 `/assets/film-0.mp4` 至 `/assets/film-16.mp4` 由 Pages Worker 重定向到对应原始视频，支持浏览器分段读取。图片原样复制，视频未重新编码、缩放或压缩。不需要 R2 或付费存储。
+
+更新视频时，需要同时更新 Release 中同名文件。Git LFS 继续用于保存仓库中的原始视频；Release 是线上播放来源。GitHub 的可访问性会影响视频加载速度。
