@@ -36,6 +36,6 @@ npm run build
 
 Cloudflare 构建根目录使用仓库根目录，构建命令 `npm run build`，输出目录 `dist`，Node.js 22.12 或更高版本。
 
-Pages 单文件限制为 25 MiB，因此原始视频独立保存于本仓库的 `portfolio-media-v1` GitHub Release。网页的 `/assets/film-0.mp4` 至 `/assets/film-16.mp4` 由 Pages Worker 重定向到对应原始视频，支持浏览器分段读取。图片原样复制，视频未重新编码、缩放或压缩。不需要 R2 或付费存储。
+Pages 单文件限制为 25 MiB，因此原始视频独立保存于本仓库的 `portfolio-media-v1` GitHub Release。网页的 `/assets/film-0.mp4` 至 `/assets/film-16.mp4` 由 Pages Worker 以同域流式响应转发对应原始视频，支持浏览器分段读取，避免手机和微信直接访问 GitHub 视频下载地址。图片原样复制，视频未重新编码、缩放或压缩。不需要 R2 或付费存储。
 
 更新视频时，需要同时更新 Release 中同名文件。Git LFS 继续用于保存仓库中的原始视频；Release 是线上播放来源。GitHub 的可访问性会影响视频加载速度。

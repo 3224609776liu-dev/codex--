@@ -5,5 +5,24 @@ export default {async fetch(request,env){
  const url=new URL(request.url);const match=url.pathname.match(ALLOWED);
  if(!match)return env.ASSETS.fetch(request);
  if(!['GET','HEAD'].includes(request.method))return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
- return new Response(null,{status:302,headers:{Location:RELEASE+match[1]+'.mp4','Cache-Control':'public, max-age=300'}});
+ const headers=new Headers();
+ for(const name of ['Range','If-Range','If-None-Match','If-Modified-Since']){
+  const value=request.headers.get(name);if(value)headers.set(name,value);
+ }
+ let upstream;
+ try{upstream=await fetch(RELEASE+match[1]+'.mp4',{method:request.method,headers,redirect:'follow'});}
+ catch{return new Response('Video temporarily unavailable. Please retry.',{status:502,headers:{'Cache-Control':'no-store'}});}
+ if(![200,206,304,416].includes(upstream.status)){
+  upstream.body?.cancel();
+  return new Response('Video temporarily unavailable. Please retry.',{status:502,headers:{'Cache-Control':'no-store'}});
+ }
+ const responseHeaders=new Headers(upstream.headers);
+ responseHeaders.set('Content-Type','video/mp4');
+ responseHeaders.set('Content-Disposition','inline');
+ responseHeaders.set('Accept-Ranges','bytes');
+ responseHeaders.set('Cache-Control','public, max-age=300');
+ responseHeaders.delete('Set-Cookie');
+ responseHeaders.delete('Location');
+ // Stream the original bytes; do not buffer, resize or transcode the video.
+ return new Response(request.method==='HEAD'?null:upstream.body,{status:upstream.status,headers:responseHeaders});
 }};
