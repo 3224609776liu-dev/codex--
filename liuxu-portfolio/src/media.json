@@ -5,42 +5,42 @@
       "category": "海外仿真人",
       "id": 2,
       "source": "1.AI海外仿真人/二十六年01.mp4",
-      "poster": "/assets/gallery-2.jpg"
+      "poster": "/assets/original-2.png"
     },
     {
       "title": "听见动物说话 · 01",
       "category": "海外仿真人",
       "id": 11,
       "source": "1.AI海外仿真人/动物01.mp4",
-      "poster": "/assets/gallery-4.jpg"
+      "poster": "/assets/original-4.jpg"
     },
     {
       "title": "幽灵妻子 · 01",
       "category": "海外仿真人",
       "id": 3,
       "source": "1.AI海外仿真人/幽灵妻子01.mp4",
-      "poster": "/assets/gallery-3.jpg"
+      "poster": "/assets/original-3.png"
     },
     {
       "title": "抛弃女王 · 01",
       "category": "海外仿真人",
       "id": 1,
       "source": "1.AI海外仿真人/抛弃01.mp4",
-      "poster": "/assets/gallery-1.jpg"
+      "poster": "/assets/original-1.png"
     },
     {
       "title": "抛弃女王 · 02",
       "category": "海外仿真人",
       "id": 12,
       "source": "1.AI海外仿真人/抛弃02.mp4",
-      "poster": "/assets/gallery-1.jpg"
+      "poster": "/assets/original-1.png"
     },
     {
       "title": "诱惑 · 01",
       "category": "海外仿真人",
       "id": 0,
       "source": "1.AI海外仿真人/诱惑01.mp4",
-      "poster": "/assets/gallery-0.jpg"
+      "poster": "/assets/original-0.jpg"
     },
     {
       "title": "太平",
@@ -113,112 +113,112 @@
     {
       "title": "诱惑",
       "type": "海报",
-      "src": "/assets/gallery-0.jpg"
+      "src": "/assets/original-0.jpg"
     },
     {
       "title": "抛弃女王",
       "type": "海报",
-      "src": "/assets/gallery-1.jpg"
+      "src": "/assets/original-1.png"
     },
     {
       "title": "二十六年",
       "type": "海报",
-      "src": "/assets/gallery-2.jpg"
+      "src": "/assets/original-2.png"
     },
     {
       "title": "幽灵妻子",
       "type": "海报",
-      "src": "/assets/gallery-3.jpg"
+      "src": "/assets/original-3.png"
     },
     {
       "title": "听见动物说话",
       "type": "海报",
-      "src": "/assets/gallery-4.jpg"
+      "src": "/assets/original-4.jpg"
     },
     {
       "title": "隐秘千金",
       "type": "海报",
-      "src": "/assets/gallery-5.jpg"
+      "src": "/assets/original-5.jpg"
     },
     {
       "title": "吸血鬼",
       "type": "海报",
-      "src": "/assets/gallery-6.jpg"
+      "src": "/assets/original-6.jpg"
     },
     {
       "title": "狼人luna",
       "type": "海报",
-      "src": "/assets/gallery-7.jpg"
+      "src": "/assets/original-7.jpeg"
     },
     {
       "title": "海外热榜截图 1",
       "type": "海外成果",
-      "src": "/assets/gallery-8.jpg"
+      "src": "/assets/original-8.png"
     },
     {
       "title": "海外热榜截图 2",
       "type": "海外成果",
-      "src": "/assets/gallery-9.jpg"
+      "src": "/assets/original-9.png"
     },
     {
       "title": "海外热榜截图 3",
       "type": "海外成果",
-      "src": "/assets/gallery-10.jpg"
+      "src": "/assets/original-10.png"
     },
     {
       "title": "二十六年背叛",
       "type": "海外成果",
-      "src": "/assets/gallery-11.jpg"
+      "src": "/assets/original-11.jpg"
     },
     {
       "title": "听见动物说话",
       "type": "海外成果",
-      "src": "/assets/gallery-12.jpg"
+      "src": "/assets/original-12.png"
     },
     {
       "title": "幽灵妻子复仇",
       "type": "海外成果",
-      "src": "/assets/gallery-13.jpg"
+      "src": "/assets/original-13.jpg"
     },
     {
       "title": "末日火车.1",
       "type": "国内成果",
-      "src": "/assets/gallery-14.jpg"
+      "src": "/assets/original-14.png"
     },
     {
       "title": "末日火车.2",
       "type": "国内成果",
-      "src": "/assets/gallery-15.jpg"
+      "src": "/assets/original-15.png"
     },
     {
       "title": "诡异擂台.1",
       "type": "国内成果",
-      "src": "/assets/gallery-16.jpg"
+      "src": "/assets/original-16.png"
     },
     {
       "title": "诡异擂台.2",
       "type": "国内成果",
-      "src": "/assets/gallery-17.jpg"
+      "src": "/assets/original-17.png"
     },
     {
       "title": "重生成鱼.1",
       "type": "国内成果",
-      "src": "/assets/gallery-18.jpg"
+      "src": "/assets/original-18.png"
     },
     {
       "title": "重生成鱼.2",
       "type": "国内成果",
-      "src": "/assets/gallery-19.jpg"
+      "src": "/assets/original-19.png"
     },
     {
       "title": "重生成鱼.3",
       "type": "国内成果",
-      "src": "/assets/gallery-20.jpg"
+      "src": "/assets/original-20.png"
     },
     {
       "title": "重生鹦鹉",
       "type": "国内成果",
-      "src": "/assets/gallery-21.jpg"
+      "src": "/assets/original-21.png"
     }
   ]
 }
