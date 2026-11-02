@@ -1,0 +1,224 @@
+{
+  "videos": [
+    {
+      "title": "二十六年 · 01",
+      "category": "海外仿真人",
+      "id": 2,
+      "source": "1.AI海外仿真人/二十六年01.mp4",
+      "poster": "/assets/gallery-2.jpg"
+    },
+    {
+      "title": "听见动物说话 · 01",
+      "category": "海外仿真人",
+      "id": 11,
+      "source": "1.AI海外仿真人/动物01.mp4",
+      "poster": "/assets/gallery-4.jpg"
+    },
+    {
+      "title": "幽灵妻子 · 01",
+      "category": "海外仿真人",
+      "id": 3,
+      "source": "1.AI海外仿真人/幽灵妻子01.mp4",
+      "poster": "/assets/gallery-3.jpg"
+    },
+    {
+      "title": "抛弃女王 · 01",
+      "category": "海外仿真人",
+      "id": 1,
+      "source": "1.AI海外仿真人/抛弃01.mp4",
+      "poster": "/assets/gallery-1.jpg"
+    },
+    {
+      "title": "抛弃女王 · 02",
+      "category": "海外仿真人",
+      "id": 12,
+      "source": "1.AI海外仿真人/抛弃02.mp4",
+      "poster": "/assets/gallery-1.jpg"
+    },
+    {
+      "title": "诱惑 · 01",
+      "category": "海外仿真人",
+      "id": 0,
+      "source": "1.AI海外仿真人/诱惑01.mp4",
+      "poster": "/assets/gallery-0.jpg"
+    },
+    {
+      "title": "太平",
+      "category": "国内仿真人",
+      "id": 5,
+      "source": "2.AI国内仿真人/太平.mp4"
+    },
+    {
+      "title": "盗墓 · 1",
+      "category": "国内仿真人",
+      "id": 4,
+      "source": "2.AI国内仿真人/盗墓1.mp4"
+    },
+    {
+      "title": "盗墓 · 2",
+      "category": "国内仿真人",
+      "id": 13,
+      "source": "2.AI国内仿真人/盗墓2.mp4"
+    },
+    {
+      "title": "遗孤",
+      "category": "国内仿真人",
+      "id": 6,
+      "source": "2.AI国内仿真人/遗孤.mp4"
+    },
+    {
+      "title": "重生成鱼 · 01",
+      "category": "AI＋实拍",
+      "id": 7,
+      "source": "3.AI+实拍/成鱼1.mp4"
+    },
+    {
+      "title": "重生成鱼 · 02",
+      "category": "AI＋实拍",
+      "id": 14,
+      "source": "3.AI+实拍/成鱼2.mp4"
+    },
+    {
+      "title": "重生鹦鹉 · 01",
+      "category": "AI＋实拍",
+      "id": 8,
+      "source": "3.AI+实拍/鹦鹉1.mp4"
+    },
+    {
+      "title": "重生鹦鹉 · 02",
+      "category": "AI＋实拍",
+      "id": 15,
+      "source": "3.AI+实拍/鹦鹉2.mp4"
+    },
+    {
+      "title": "诡异擂台 · 1",
+      "category": "AI动漫",
+      "id": 10,
+      "source": "4.AI动漫/诡异擂台1.mp4"
+    },
+    {
+      "title": "诡异擂台 · 2",
+      "category": "AI动漫",
+      "id": 16,
+      "source": "4.AI动漫/诡异擂台2.mp4"
+    },
+    {
+      "title": "风花雪月",
+      "category": "AI动漫",
+      "id": 9,
+      "source": "4.AI动漫/风花雪月.mp4"
+    }
+  ],
+  "gallery": [
+    {
+      "title": "诱惑",
+      "type": "海报",
+      "src": "/assets/gallery-0.jpg"
+    },
+    {
+      "title": "抛弃女王",
+      "type": "海报",
+      "src": "/assets/gallery-1.jpg"
+    },
+    {
+      "title": "二十六年",
+      "type": "海报",
+      "src": "/assets/gallery-2.jpg"
+    },
+    {
+      "title": "幽灵妻子",
+      "type": "海报",
+      "src": "/assets/gallery-3.jpg"
+    },
+    {
+      "title": "听见动物说话",
+      "type": "海报",
+      "src": "/assets/gallery-4.jpg"
+    },
+    {
+      "title": "隐秘千金",
+      "type": "海报",
+      "src": "/assets/gallery-5.jpg"
+    },
+    {
+      "title": "吸血鬼",
+      "type": "海报",
+      "src": "/assets/gallery-6.jpg"
+    },
+    {
+      "title": "狼人luna",
+      "type": "海报",
+      "src": "/assets/gallery-7.jpg"
+    },
+    {
+      "title": "海外热榜截图 1",
+      "type": "海外成果",
+      "src": "/assets/gallery-8.jpg"
+    },
+    {
+      "title": "海外热榜截图 2",
+      "type": "海外成果",
+      "src": "/assets/gallery-9.jpg"
+    },
+    {
+      "title": "海外热榜截图 3",
+      "type": "海外成果",
+      "src": "/assets/gallery-10.jpg"
+    },
+    {
+      "title": "二十六年背叛",
+      "type": "海外成果",
+      "src": "/assets/gallery-11.jpg"
+    },
+    {
+      "title": "听见动物说话",
+      "type": "海外成果",
+      "src": "/assets/gallery-12.jpg"
+    },
+    {
+      "title": "幽灵妻子复仇",
+      "type": "海外成果",
+      "src": "/assets/gallery-13.jpg"
+    },
+    {
+      "title": "末日火车.1",
+      "type": "国内成果",
+      "src": "/assets/gallery-14.jpg"
+    },
+    {
+      "title": "末日火车.2",
+      "type": "国内成果",
+      "src": "/assets/gallery-15.jpg"
+    },
+    {
+      "title": "诡异擂台.1",
+      "type": "国内成果",
+      "src": "/assets/gallery-16.jpg"
+    },
+    {
+      "title": "诡异擂台.2",
+      "type": "国内成果",
+      "src": "/assets/gallery-17.jpg"
+    },
+    {
+      "title": "重生成鱼.1",
+      "type": "国内成果",
+      "src": "/assets/gallery-18.jpg"
+    },
+    {
+      "title": "重生成鱼.2",
+      "type": "国内成果",
+      "src": "/assets/gallery-19.jpg"
+    },
+    {
+      "title": "重生成鱼.3",
+      "type": "国内成果",
+      "src": "/assets/gallery-20.jpg"
+    },
+    {
+      "title": "重生鹦鹉",
+      "type": "国内成果",
+      "src": "/assets/gallery-21.jpg"
+    }
+  ]
+}

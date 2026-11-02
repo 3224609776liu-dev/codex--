@@ -1,0 +1,6 @@
+node_modules/
+dist/
+package/
+npm.tgz
+ffmpeg.exe
+ffmpeg.gz
