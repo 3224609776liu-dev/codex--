@@ -50,3 +50,11 @@ Cloudflare 构建根目录使用仓库根目录，构建命令 `npm run build`�
 Pages 单文件限制为 25 MiB，因此原始视频独立保存于本仓库的 `portfolio-media-v1` GitHub Release。网页的 `/assets/film-0.mp4` 至 `/assets/film-16.mp4` 由 Pages Worker 以同域流式响应转发对应原始视频，支持浏览器分段读取，避免手机和微信直接访问 GitHub 视频下载地址。图片原样复制，视频未重新编码、缩放或压缩。不需要 R2 或付费存储。
 
 更新视频时，需要同时更新 Release 中同名文件。Git LFS 继续用于保存仓库中的原始视频；Release 是线上播放来源。GitHub 的可访问性会影响视频加载速度。
+
+## 三档清晰度播放
+
+播放器默认「自动」，根据浏览器提供的网络信息选择 480p、720p 或 1080p；网络持续卡顿时降低清晰度，网络信息更新或稳定缓冲后再调整。手动选择后锁定该档位，切换保留播放进度、暂停状态及声音设置。
+
+三档为独立生成的 H.264 / AAC 播放副本，存放在 `portfolio-playback-v1` GitHub Release，原始视频仍保存在 `portfolio-media-v1` 与 Git LFS，未被替换。竖屏的清晰度按短边计算，保持原有方向和比例。播放索引为 `liuxu-portfolio/src/video-variants.json`。本地 Vite 开发通过代理读取已部署的播放副本。
+
+点击作品即尝试自动播放；浏览器限制有声自动播放时，先静音播放并提供开启声音按钮；仍被限制时显示点击播放。所有版本通过网站同域流式传输，不让手机跳转 GitHub 下载页。

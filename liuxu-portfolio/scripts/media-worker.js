@@ -1,6 +1,7 @@
-// Pages serves the website. GitHub Releases serves unchanged original media.
-const ALLOWED=/^\/assets\/(film-(?:[0-9]|1[0-6])|hero)\.mp4$/;
+// Pages streams both intact originals and separate playback renditions.
+const ALLOWED=/^\/assets\/((?:film-(?:[0-9]|1[0-6])|hero)(?:-(480|720|1080)p)?)\.mp4$/;
 const RELEASE='https://github.com/3224609776liu-dev/codex--/releases/download/portfolio-media-v1/';
+const PLAYBACK_RELEASE='https://github.com/3224609776liu-dev/codex--/releases/download/portfolio-playback-v1/';
 export default {async fetch(request,env){
  const url=new URL(request.url);const match=url.pathname.match(ALLOWED);
  if(!match)return env.ASSETS.fetch(request);
@@ -10,7 +11,7 @@ export default {async fetch(request,env){
   const value=request.headers.get(name);if(value)headers.set(name,value);
  }
  let upstream;
- try{upstream=await fetch(RELEASE+match[1]+'.mp4',{method:request.method,headers,redirect:'follow'});}
+ try{upstream=await fetch((match[2]?PLAYBACK_RELEASE:RELEASE)+match[1]+'.mp4',{method:request.method,headers,redirect:'follow'});}
  catch{return new Response('Video temporarily unavailable. Please retry.',{status:502,headers:{'Cache-Control':'no-store'}});}
  if(![200,206,304,416].includes(upstream.status)){
   upstream.body?.cancel();
