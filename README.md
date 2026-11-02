@@ -34,6 +34,17 @@ npm run build
 
 ## Cloudflare Pages 免费部署
 
+正式分享地址：`https://www.lxzuopinji.pages.dev`。不带 www 的地址：`https://lxzuopinji.pages.dev`。旧项目 `codex-zuopin` 保留，避免历史分享链接失效。
+
+新项目使用直接上传；`www` 是固定的分支别名。每次更新后，先在仓库根目录执行 `npm run build`，再同步两个入口：
+
+```bash
+npx wrangler pages deploy dist --project-name lxzuopinji --branch main
+npx wrangler pages deploy dist --project-name lxzuopinji --branch www
+```
+
+仅向 GitHub 推送代码不会自动更新新项目，必须执行上述部署。旧项目的 GitHub 自动部署仍保留。
+
 Cloudflare 构建根目录使用仓库根目录，构建命令 `npm run build`，输出目录 `dist`，Node.js 22.12 或更高版本。
 
 Pages 单文件限制为 25 MiB，因此原始视频独立保存于本仓库的 `portfolio-media-v1` GitHub Release。网页的 `/assets/film-0.mp4` 至 `/assets/film-16.mp4` 由 Pages Worker 以同域流式响应转发对应原始视频，支持浏览器分段读取，避免手机和微信直接访问 GitHub 视频下载地址。图片原样复制，视频未重新编码、缩放或压缩。不需要 R2 或付费存储。
